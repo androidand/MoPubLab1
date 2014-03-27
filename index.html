@@ -3,7 +3,9 @@
   <head>
     <title>Lab1</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-       <!-- Our own CSS -->
+       <!-- Bootstrap:  CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <!-- Our own CSS -->
     <link rel="stylesheet" type="text/css" href="css/lab1style.css">
     <!-- Google Maps API -->
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?&sensor=false"> </script>
@@ -13,18 +15,19 @@
     <!-- Bootstrap JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js">           </script>
     <!-- The application JavaScript code: Put all references to our js files here -->
-    <script src="js/googleAPI.js">                                                                 </script>
+    <script src="js/googleAPI.js"></script>
+    <script src="js/ControlPanelController.js"></script>
   </head>
   <body>
       
       <div id="controlPanel">
-      <button type="button" id ="PanUp">Pan Up</button>
-      <button type="button" id ="PanLeft">Pan Left</button>
-      <button type="button" id ="PanDown">Pan Down</button>
-      <button type="button" id ="PanRight">Pan Right</button>
+      <button type="button" class="btn btn-default" id ="PanUp">Pan Up</button>
+      <button type="button" class="btn btn-default" id ="PanLeft">Pan Left</button>
+      <button type="button" class="btn btn-default" id ="PanDown">Pan Down</button>
+      <button type="button" class="btn btn-default" id ="PanRight">Pan Right</button>
 
-      <button type="button" id ="ZoomIn">Zoom in</button>
-      <button type="button" id ="ZoomOut">Zoom out</button>
+      <button type="button" class="btn btn-success" id ="ZoomIn">Zoom in</button>
+      <button type="button" class="btn btn-warning" id ="ZoomOut">Zoom out</button>
       </div>
       <div id="map-canvas"></div>
   </body>
