@@ -15,20 +15,22 @@
     <!-- Bootstrap JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js">           </script>
     <!-- The application JavaScript code: Put all references to our js files here -->
+
+    <script src="js/googleAPI.js">                                                                 </script>
+<script>
+
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+
     <script src="js/googleAPI.js"></script>
     <script src="js/ControlPanelController.js"></script>
   </head>
-  <body onload="initialize()">
+  <body>
       
-      <div id="controlPanel">
-      <button type="button" class="btn btn-default" id ="PanUp">Pan Up</button>
-      <button type="button" class="btn btn-default" id ="PanLeft">Pan Left</button>
-      <button type="button" class="btn btn-default" id ="PanDown">Pan Down</button>
-      <button type="button" class="btn btn-default" id ="PanRight">Pan Right</button>
+     <div id="map-canvas"></div>
 
-      <button type="button" class="btn btn-success" id ="ZoomIn">Zoom in</button>
-      <button type="button" class="btn btn-warning" id ="ZoomOut">Zoom out</button>
-      </div>
-      <div id="map-canvas"></div>
   </body>
 </html>
